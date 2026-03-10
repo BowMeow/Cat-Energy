@@ -1,0 +1,66 @@
+.hero__wrapper{
+    padding:114px 110px 185px 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 500px;
+    margin-bottom: 82px;
+}
+.hero__title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+.hero__text{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+    margin-left: 80px;
+}
+
+.hero__button{
+    width: 244px;
+    min-height: 54px;
+    border:none;
+    background-color: #68B738;
+    color:#FFFFFF;
+    font-family: 'Oswald', sans-serif;;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.hero__image {
+    position: relative;
+    background-image: url('/images/background-desktop-1.png');
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+.hero__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: 1; 
+}
+
+.hero__picture{
+    position: absolute;
+    right:  50%;
+    transform: translate(50%, 15%);
+    z-index: 2;
+}
