@@ -27,27 +27,14 @@
 
 .hero__button{
     width: 244px;
-    min-height: 54px;
-    border:none;
-    background-color: #68B738;
-    color:#FFFFFF;
-    font-family: 'Oswald', sans-serif;;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    cursor: pointer;
     margin-left: 80px;
+    min-height: 54px;
 }
 
 .hero__image {
     position: relative;
     background-image: url('/images/background-desktop-1.png');
     background-repeat: no-repeat;
-    max-width: 1440px;
-    overflow: hidden;
 }
 
 .hero__image::after {

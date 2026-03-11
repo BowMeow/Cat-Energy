@@ -3,7 +3,7 @@
     padding-right: 110px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
 }
 
 .programs__slim,
@@ -54,5 +54,5 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: #000000;
+    color: #000000; 
 }
