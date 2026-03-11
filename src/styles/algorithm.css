@@ -1,0 +1,116 @@
+.algorithm__wrapper{
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 26px;
+}
+
+.algorithm__title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.algorithm__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.algorithm__item{
+    width: 245px;
+    min-height: 280px;
+    position: relative;
+    padding-top: 151px;
+    box-sizing: border-box;
+}
+
+.algorithm__text{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    margin: 0;
+}
+
+.algorithm__item--healthy::before{
+    position: absolute;
+    content: url(/images/algorithm-1.svg);
+    top:40px;
+}
+
+.algorithm__item--easy::before{
+    position: absolute;
+    content: url(/images/algorithm-2.svg);
+    top:40px;
+}
+
+.algorithm__item--replace::before{
+    position: absolute;
+    content: url(/images/algorithm-3.svg);
+    top:40px;
+}
+
+.algorithm__item--enjoy::before{
+    position: absolute;
+    content: url(/images/algorithm-4.svg);
+    top:40px;
+}
+
+.algorithm__item--healthy::after{
+    position: absolute;
+    content: "1";
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color:#F2F2F2;
+    top:0;
+    right: 15px;
+    z-index: -1;
+}
+
+.algorithm__item--easy::after{
+    position: absolute;
+    content: "2";
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color:#F2F2F2;
+    top:0;
+    right: -5px;
+    z-index: -1;
+}
+
+.algorithm__item--replace::after{
+    position: absolute;
+    content: "3";
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color:#F2F2F2;
+    top:0;
+    right: 10px;
+    z-index: -1;
+}
+
+.algorithm__item--enjoy::after{
+    position: absolute;
+    content: "4";
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color:#F2F2F2;
+    top:0;
+    right: -5px;
+    z-index: -1;
+}
