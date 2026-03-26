@@ -1,0 +1,74 @@
+.hero {
+    &__wrapper {
+        padding: 114px 110px 185px 110px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        min-height: 500px;
+        margin-bottom: 82px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -141px;
+            right: 0;
+            width: 720px;
+            height: 100%;
+            background-image: url("/images/background-desktop-1.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -141px;
+            right: 0;
+            width: 720px;
+            height: 100%;
+            background-color: rgba(104, 183, 56, 0.85);
+            z-index: 1;
+        }
+    }
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0;
+        margin-bottom: 40px;
+        margin-left: 80px;
+    }
+
+    &__text {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 52px;
+        margin-left: 80px;
+    }
+
+    &__button {
+        width: 244px;
+        margin-left: 80px;
+        min-height: 54px;
+    }
+
+    &__image {
+        position: relative;
+    }
+
+    &__picture {
+        position: absolute;
+        right: 600px;
+        transform: translate(50%, 15%);
+        z-index: 2;
+    }
+}
+

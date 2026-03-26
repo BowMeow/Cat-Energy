@@ -1,0 +1,73 @@
+.slider {
+    margin-left: 193px;
+
+
+    &__image {
+        margin-bottom: 25px;
+    }
+
+    &__range {
+        position: relative;
+    }
+
+    &__scale {
+        position: absolute;
+        height: 4px;
+        background-color: #FFFFFF;
+        height: 6px;
+        width: 426px;
+        background-color: #DCDCDC;
+        left: 84px;
+
+
+        &::before {
+            position: absolute;
+            content: "было";
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            left: -70px;
+            top: -7px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "стало";
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            left: 449px;
+            top: -7px;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1px solid #CDCDCD;
+        background-color: #FFFFFF;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -40%);
+
+
+        &::before {
+            position: absolute;
+            content: " ";
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            top: 12px;
+            left: 12px;
+            background-color: #68B738;
+        }
+    }
+}

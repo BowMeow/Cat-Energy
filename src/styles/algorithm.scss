@@ -1,0 +1,129 @@
+.algorithm {
+    &__wrapper {
+        padding-left: 110px;
+        padding-right: 110px;
+        margin-bottom: 26px;
+    }
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    counter-reset: number;
+    &__item {
+        width: 245px;
+        min-height: 280px;
+        position: relative;
+        padding-top: 151px;
+        box-sizing: border-box;
+        counter-increment: number;
+
+        &--healthy {
+            
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-1.svg);
+                top: 40px;
+            }
+ 
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: 15px;
+                z-index: -1;
+            }
+        }
+
+        &--easy {
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-2.svg);
+                top: 40px;
+            }
+
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: -5px;
+                z-index: -1;
+            }
+        }
+
+        &--replace {
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-3.svg);
+                top: 40px;
+            }
+
+            &::after {
+                position: absolute;
+                content:counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: 10px;
+                z-index: -1;
+            }
+        }
+
+        &--enjoy {
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-4.svg);
+                top: 40px;
+            }
+
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: -5px;
+                z-index: -1;
+            }
+        }
+
+    }
+
+    &__text {
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #444444;
+        margin: 0;
+    }
+}
