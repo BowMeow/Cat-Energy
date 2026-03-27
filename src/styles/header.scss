@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .header {
     &__wrapper {
         display: flex;
@@ -8,11 +10,21 @@
         padding-left: 110px;
         padding-right: 110px;
         position: relative;
+
+        @media(max-width:$tablet-width) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
     }
 
     &__nav {
         min-width: 478px;
         max-width: 720px;
+
+        @media(max-width:$tablet-width) {
+            min-width: 440px;
+            max-width: 500px;
+        }
     }
 
     &__list {
@@ -30,5 +42,12 @@
         color: #FFFFFF;
         top: 45px;
         z-index: 2;
+        
+
+        @media(max-width:$tablet-width) {
+            position: relative;
+            top:0;
+            color: #000000;
+        }
     }
 }
