@@ -1,8 +1,16 @@
+@import "variables.scss";
+
 .algorithm {
     &__wrapper {
         padding-left: 110px;
         padding-right: 110px;
         margin-bottom: 26px;
+
+        @media(max-width:$mobile-width) {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 0
+        }
     }
 
     &__title {
@@ -12,6 +20,12 @@
         line-height: 60px;
         margin: 0;
         margin-bottom: 32px;
+
+        @media(max-width:$mobile-width) {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
     }
 
     &__list {
@@ -21,24 +35,43 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media(max-width:$mobile-width) {
+            gap: 20px;
+            justify-content: center;
+        }
     }
+
     counter-reset: number;
+
     &__item {
-        width: 245px;
+        max-width: 245px;
         min-height: 280px;
         position: relative;
         padding-top: 151px;
         box-sizing: border-box;
         counter-increment: number;
 
+        @media(max-width:$mobile-width) {
+            min-width: 280px;
+            padding-top: 0;
+            min-height: 60px;
+
+        }
+
         &--healthy {
-            
+
             &::before {
                 position: absolute;
                 content: url(/images/algorithm-1.svg);
                 top: 40px;
+
+                @media(max-width:$mobile-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
             }
- 
+
             &::after {
                 position: absolute;
                 content: counter(number);
@@ -50,6 +83,10 @@
                 top: 0;
                 right: 15px;
                 z-index: -1;
+
+                @media(max-width:$mobile-width) {
+                    display: none;
+                }
             }
         }
 
@@ -58,6 +95,12 @@
                 position: absolute;
                 content: url(/images/algorithm-2.svg);
                 top: 40px;
+
+                @media(max-width:$mobile-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
             }
 
             &::after {
@@ -71,6 +114,10 @@
                 top: 0;
                 right: -5px;
                 z-index: -1;
+
+                @media(max-width:$mobile-width) {
+                    display: none;
+                }
             }
         }
 
@@ -79,11 +126,17 @@
                 position: absolute;
                 content: url(/images/algorithm-3.svg);
                 top: 40px;
+
+                @media(max-width:$mobile-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
             }
 
             &::after {
                 position: absolute;
-                content:counter(number);
+                content: counter(number);
                 font-family: 'Oswald', sans-serif;
                 font-weight: 400;
                 font-size: 280px;
@@ -92,6 +145,10 @@
                 top: 0;
                 right: 10px;
                 z-index: -1;
+
+                @media(max-width:$mobile-width) {
+                    display: none;
+                }
             }
         }
 
@@ -100,6 +157,12 @@
                 position: absolute;
                 content: url(/images/algorithm-4.svg);
                 top: 40px;
+
+                @media(max-width:$mobile-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
             }
 
             &::after {
@@ -113,6 +176,10 @@
                 top: 0;
                 right: -5px;
                 z-index: -1;
+
+                @media(max-width:$mobile-width) {
+                    display: none;
+                }
             }
         }
 
@@ -125,5 +192,11 @@
         line-height: 24px;
         color: #444444;
         margin: 0;
+
+        @media(max-width:$mobile-width) {
+            font-size: 14px;
+            line-height: 18px;
+            margin-left: 80px;
+        }
     }
 }

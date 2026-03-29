@@ -1,9 +1,18 @@
+@import "variables.scss";
+
 .slider {
     margin-left: 193px;
 
+    @media(max-width:$mobile-width) {
+        margin: 0;
+    }
 
     &__image {
         margin-bottom: 25px;
+
+        @media(max-width:$mobile-width) {
+            transform: scale(0.47);
+        }
     }
 
     &__range {
@@ -12,13 +21,16 @@
 
     &__scale {
         position: absolute;
-        height: 4px;
         background-color: #FFFFFF;
         height: 6px;
         width: 426px;
         background-color: #DCDCDC;
         left: 84px;
 
+        @media(max-width:$mobile-width) {
+            height: 14px;
+            width: 85px;
+        }
 
         &::before {
             position: absolute;
@@ -70,4 +82,7 @@
             background-color: #68B738;
         }
     }
+
+
+
 }

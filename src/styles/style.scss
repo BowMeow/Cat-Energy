@@ -14,11 +14,14 @@
 @use "item.scss";
 @use "program-filter.scss";
 @use "variables.scss";
+@import "variables";
 
 body {
-    width: 1440px;
+
     margin: 0 auto;
     box-sizing: border-box;
+    max-width: 1440px;
+
 }
 
 .visually-hidden {

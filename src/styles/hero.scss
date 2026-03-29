@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .hero {
     &__wrapper {
         padding: 114px 110px 185px 110px;
@@ -6,7 +8,17 @@
         position: relative;
         min-height: 500px;
         margin-bottom: 82px;
-        position: relative;
+
+        @media(max-width:$tablet-width) {
+            padding: 50px 30px 50px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media(max-width:$mobile-width) {
+            padding: 27px 20px 80px;
+            display: block;
+        }
 
         &::after {
             content: "";
@@ -20,6 +32,24 @@
             background-position: center;
             background-size: cover;
             z-index: 0;
+
+
+            @media(max-width:$tablet-width) {
+                display: none;
+            }
+
+            @media(max-width:$mobile-width) {
+                display: none;
+                // content: "";
+                // position: absolute;
+                // top: 0;
+                // left: 0px;
+                // background-image: url("/images/background-mobile.png");
+                // background-repeat: no-repeat;
+                // background-position: center;
+                // z-index: -2;
+            }
+
         }
 
         &::before {
@@ -31,6 +61,24 @@
             height: 100%;
             background-color: rgba(104, 183, 56, 0.85);
             z-index: 1;
+
+
+
+            @media(max-width:$tablet-width) {
+                display: none;
+            }
+
+            @media(max-width:$mobile-width) {
+                display: none;
+                // content: "";
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // height: 100%;
+                // background-color: rgba(104, 183, 56, 0.85);
+                // z-index: -1;
+            }
+
         }
     }
 
@@ -42,6 +90,17 @@
         margin: 0;
         margin-bottom: 40px;
         margin-left: 80px;
+
+        @media (max-width:$tablet-width) {}
+
+        @media(max-width:$mobile-width) {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 36px;
+            line-height: 36px;
+            text-align: center;
+            color: #f0d4d4;
+        }
     }
 
     &__text {
@@ -52,12 +111,26 @@
         text-transform: uppercase;
         margin-bottom: 52px;
         margin-left: 80px;
+
+        @media(max-width:$mobile-width) {
+            margin: 0;
+            margin-bottom: 280px;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: #f0d4d4;
+        }
     }
 
     &__button {
         width: 244px;
         margin-left: 80px;
         min-height: 54px;
+
+        @media(max-width:$mobile-width) {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &__image {
@@ -69,6 +142,11 @@
         right: 600px;
         transform: translate(50%, 15%);
         z-index: 2;
+
+        @media(max-width:$mobile-width) {
+            position: static;
+            transform:translate(-20%) scale(0.5);
+            margin-top: -430px;
+        }
     }
 }
-

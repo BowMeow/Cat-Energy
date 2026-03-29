@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .programs {
     &__wrapper {
         padding-left: 110px;
@@ -5,14 +7,26 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 70px;
+        flex-wrap: wrap;
+
+        @media(max-width:$mobile-width) {
+            padding-left: 20px;
+            padding-right: 20px;
+            gap: 20px;
+            justify-content: center;
+        }
     }
 
     &__slim,
     &__pro {
         background-color: #F2F2F2;
-        width: 570px;
-        padding: 41px 52px 55px;
+        max-width: 570px;
+        padding: 30px 20px 18px;
         box-sizing: border-box;
+
+        @media(max-width:$mobile-width) {
+            max-width: 320px;
+        }
     }
 
     &__title {
@@ -25,11 +39,22 @@
         position: relative;
         margin-bottom: 73px;
 
+        @media(max-width:$mobile-width) {
+            font-size: 24px;
+            margin-bottom: 29px;
+            margin-left: 35px;
+        }
+
         &--icon-loss::before {
             content: url(/images/cat-slim.svg);
             position: absolute;
             left: 0;
             top: -100%;
+
+            @media(max-width:$mobile-width) {
+                transform: scale(0.5);
+                left: -50px;
+            }
         }
 
         &--icon-increase::before {
@@ -37,6 +62,11 @@
             position: absolute;
             left: -19px;
             top: -100%;
+
+            @media(max-width:$mobile-width) {
+                transform: scale(0.5);
+                left: -80px;
+            }
         }
     }
 
@@ -46,6 +76,10 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 23px;
+
+        @media(max-width:$mobile-width) {
+            font-size: 14px;
+        }
     }
 
     &__button {
@@ -56,5 +90,8 @@
         text-transform: uppercase;
         text-decoration: none;
         color: #000000;
+         @media(max-width:$mobile-width) {
+            font-size: 16px;
+        }
     }
 }

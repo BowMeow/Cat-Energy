@@ -1,8 +1,15 @@
+@import "variables.scss";
+
 .catalog {
   &__wrapper {
     padding-left: 110px;
     padding-right: 110px;
     margin-bottom: 70px;
+
+    @media(max-width:$mobile-width) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__title {
@@ -12,6 +19,12 @@
     line-height: 60px;
     margin: 0;
     margin-bottom: 165px;
+
+    @media(max-width:$mobile-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -22,23 +35,43 @@
     row-gap: 144px;
     margin: 0;
     padding: 0;
+
+    @media(max-width:$mobile-width) {
+      gap: 20px;
+      justify-content: center;
+      margin: 0 auto;
+      
+    }
   }
 
   &__item {
     position: relative;
     background-color: #F2F2F2;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 245px;
+    max-width: 245px;
     padding: 0 30px 40px 35px;
     box-sizing: border-box;
+
+    @media(max-width:$mobile-width) {
+      background-color: transparent;
+      min-width: 320px;
+      padding: 12px 0;
+    }
 
     &:first-child::before {
       content: url(/images/catalog-1.png);
       position: absolute;
       top: -75px;
       left: 40px;
+
+      @media(max-width:$mobile-width) {
+        transform: scale(0.5);
+        top:-30px;
+        left: -15px;
+      }
     }
 
     &:nth-child(2)::before {
@@ -46,6 +79,11 @@
       position: absolute;
       top: -75px;
       left: 40px;
+      @media(max-width:$mobile-width) {
+        transform: scale(0.45);
+        top:-30px;
+        left: -15px;
+      }
     }
 
     &:nth-child(3)::before {
@@ -53,6 +91,11 @@
       position: absolute;
       top: -75px;
       left: 40px;
+      @media(max-width:$mobile-width) {
+        transform: scale(0.5);
+        top:-30px;
+        left: -15px;
+      }
     }
 
     &:nth-child(4)::before {
@@ -60,6 +103,11 @@
       position: absolute;
       top: -75px;
       left: 40px;
+      @media(max-width:$mobile-width) {
+        transform: scale(0.45);
+        top:-30px;
+        left: -15px;
+      }
     }
 
     &:nth-child(5)::before {
@@ -67,6 +115,11 @@
       position: absolute;
       top: -75px;
       left: 40px;
+      @media(max-width:$mobile-width) {
+        transform: scale(0.5);
+        top:-30px;
+        left: -15px;
+      }
     }
 
     &:nth-child(6)::before {
@@ -74,6 +127,11 @@
       position: absolute;
       top: -75px;
       left: 40px;
+      @media(max-width:$mobile-width) {
+        transform: scale(0.45);
+        top:-30px;
+        left: -15px;
+      }
     }
 
     &:nth-child(7)::before {
@@ -81,6 +139,11 @@
       position: absolute;
       top: -75px;
       left: 40px;
+      @media(max-width:$mobile-width) {
+        transform: scale(0.5);
+        top:-30px;
+        left: -15px;
+      }
     }
   }
 
@@ -88,5 +151,11 @@
     width: 168px;
     min-height: 40px;
     align-self: center;
+    @media(max-width:$mobile-width) {
+      display: block;
+      width: 90%;
+      
+    }
+
   }
 }
