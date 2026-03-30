@@ -6,7 +6,7 @@
     padding-right: 110px;
     margin-bottom: 70px;
 
-    @media(max-width:$mobile-width) {
+    @media(max-width:$tablet-width) {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -20,7 +20,7 @@
     margin: 0;
     margin-bottom: 165px;
 
-    @media(max-width:$mobile-width) {
+    @media(max-width:$tablet-width) {
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 50px;
@@ -36,7 +36,7 @@
     margin: 0;
     padding: 0;
 
-    @media(max-width:$mobile-width) {
+    @media(max-width:$tablet-width) {
       gap: 20px;
       justify-content: center;
       margin: 0 auto;
@@ -55,7 +55,7 @@
     padding: 0 30px 40px 35px;
     box-sizing: border-box;
 
-    @media(max-width:$mobile-width) {
+    @media(max-width:$tablet-width) {
       background-color: transparent;
       min-width: 320px;
       padding: 12px 0;
@@ -67,7 +67,7 @@
       top: -75px;
       left: 40px;
 
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.5);
         top:-30px;
         left: -15px;
@@ -79,7 +79,7 @@
       position: absolute;
       top: -75px;
       left: 40px;
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.45);
         top:-30px;
         left: -15px;
@@ -91,7 +91,7 @@
       position: absolute;
       top: -75px;
       left: 40px;
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.5);
         top:-30px;
         left: -15px;
@@ -103,7 +103,7 @@
       position: absolute;
       top: -75px;
       left: 40px;
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.45);
         top:-30px;
         left: -15px;
@@ -115,7 +115,7 @@
       position: absolute;
       top: -75px;
       left: 40px;
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.5);
         top:-30px;
         left: -15px;
@@ -127,7 +127,7 @@
       position: absolute;
       top: -75px;
       left: 40px;
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.45);
         top:-30px;
         left: -15px;
@@ -139,7 +139,7 @@
       position: absolute;
       top: -75px;
       left: 40px;
-      @media(max-width:$mobile-width) {
+      @media(max-width:$tablet-width) {
         transform: scale(0.5);
         top:-30px;
         left: -15px;
@@ -151,7 +151,7 @@
     width: 168px;
     min-height: 40px;
     align-self: center;
-    @media(max-width:$mobile-width) {
+    @media(max-width:$tablet-width) {
       display: block;
       width: 90%;
       

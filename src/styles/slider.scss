@@ -3,14 +3,14 @@
 .slider {
     margin-left: 193px;
 
-    @media(max-width:$mobile-width) {
+    @media(max-width:$tablet-width) {
         margin: 0;
     }
 
     &__image {
         margin-bottom: 25px;
 
-        @media(max-width:$mobile-width) {
+        @media(max-width:$tablet-width) {
             transform: scale(0.47);
         }
     }
@@ -27,7 +27,7 @@
         background-color: #DCDCDC;
         left: 84px;
 
-        @media(max-width:$mobile-width) {
+        @media(max-width:$tablet-width) {
             height: 14px;
             width: 85px;
         }
