@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .program-filter {
     &__list {
         list-style: none;
@@ -23,6 +25,13 @@
             top: -15px;
             left: -48px;
             background-color: #68B738;
+
+            @media(max-width:$tablet-width) {
+                width: 13px;
+                height: 13px;
+                top: -17px;
+                left: -50px;
+            }
         }
 
         &::after {
@@ -34,6 +43,11 @@
             top: -27px;
             left: -60px;
             border: 1px solid #CDCDCD;
+
+            @media(max-width:$tablet-width) {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 
@@ -54,6 +68,11 @@
         font-weight: 400;
         font-size: 20px;
         text-transform: uppercase;
+
+        @media(max-width:$tablet-width) {
+            font-size: 16px;
+            line-height: 18px;
+        }
     }
 
     &__label {

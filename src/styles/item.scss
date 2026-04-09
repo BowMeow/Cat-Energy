@@ -1,3 +1,4 @@
+@import "variables.scss";
 .item {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -16,6 +17,11 @@
         text-transform: uppercase;
         color: #444444;
         padding-top: 10px;
+
+        @media(max-width:$tablet-width) {
+            font-size: 16px;
+            line-height: 18px;
+        }
     }
 
     &__container {
@@ -32,5 +38,12 @@
         min-height: 52px;
         padding-left: 20px;
         border: 1px solid #E7E7E7;
+        @media(max-width:$tablet-width) {
+            font-size: 16px;
+            line-height: 18px;
+            min-height: 46px;
+            padding: 0;
+            padding-left: 15px;
+        }
     }
 }

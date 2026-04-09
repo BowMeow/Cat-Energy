@@ -67,6 +67,10 @@
             height: 1px;
             background-color: #CDCDCD;
 
+            @media(max-width:$desktop-width) {
+                width: 250px;
+            }
+
             @media(max-width:$tablet-width) {
                 display: none;
             }

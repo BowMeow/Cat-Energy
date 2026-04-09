@@ -3,6 +3,10 @@
 .slider {
     margin-left: 193px;
 
+    @media(max-width:$desktop-width) {
+        margin: 0 auto;
+    }
+
     @media(max-width:$tablet-width) {
         margin: 0;
     }
@@ -10,8 +14,13 @@
     &__image {
         margin-bottom: 25px;
 
+        @media(max-width:$desktop-width) {
+            margin: 0 auto;
+        }
+
         @media(max-width:$tablet-width) {
-            transform: scale(0.47);
+            width: 280px;
+            height: 232px;
         }
     }
 
@@ -21,15 +30,18 @@
 
     &__scale {
         position: absolute;
-        background-color: #FFFFFF;
         height: 6px;
         width: 426px;
         background-color: #DCDCDC;
         left: 84px;
 
         @media(max-width:$tablet-width) {
+            background-color: #FFFFFF;
             height: 14px;
-            width: 85px;
+            width: 86px;
+            left: 50%;
+            transform: translate(-35%);
+            border-radius: 30%;
         }
 
         &::before {
@@ -43,6 +55,12 @@
             text-transform: uppercase;
             left: -70px;
             top: -7px;
+
+            @media(max-width:$tablet-width) {
+                font-size: 16px;
+                line-height: 20px;
+                top: -3px;
+            }
         }
 
         &::after {
@@ -56,6 +74,13 @@
             text-transform: uppercase;
             left: 449px;
             top: -7px;
+
+            @media(max-width:$tablet-width) {
+                font-size: 16px;
+                line-height: 20px;
+                left: 120px;
+                top: -3px;
+            }
         }
     }
 
@@ -70,6 +95,14 @@
         top: 50%;
         transform: translate(-50%, -40%);
 
+        @media(max-width:$tablet-width) {
+            background-color: #68B738;
+            width: 36px;
+            height: 6px;
+            transform: translate(-50%, 50%);
+            border-radius: 30%;
+        }
+
 
         &::before {
             position: absolute;
@@ -80,6 +113,11 @@
             top: 12px;
             left: 12px;
             background-color: #68B738;
+
+            @media(max-width:$tablet-width) {
+                display: none;
+            }
+
         }
     }
 
