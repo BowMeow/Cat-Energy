@@ -87,6 +87,7 @@
     }
 
     &--more {
+        position: relative;
         background-color: #FFFFFF;
         border: 2px solid #F2F2F2;
         box-sizing: border-box;
@@ -95,6 +96,40 @@
         @media(max-width:$tablet-width) {
             border: none;
             margin: 0;
+        }
+
+        &::before{
+            position: absolute;
+            content: " ";
+            width: 60px;
+            height: 2px;
+            background-color: #D3D3D3;
+            top: 80px;
+            left: 92px;
+                @media(max-width:$desktop-width) {
+                    left: 132px;    
+                }
+                @media(max-width:$tablet-width) {
+                    width: 30px;
+                    top:65px;
+                    left: 147px;
+                }
+        }
+
+        &::after{
+            position: absolute;
+            content: " ";
+            width: 2px;
+            height: 60px;
+            background-color: #D3D3D3;
+            top: 50px;
+            left: 122px;
+                @media(max-width:$desktop-width) {
+                    left: 162px;    
+                }
+                @media(max-width:$tablet-width) {
+                    height: 30px;
+                }
         }
 
     }

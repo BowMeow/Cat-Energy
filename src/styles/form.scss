@@ -73,7 +73,7 @@
         border: 1px solid #E7E7E7;
         padding: 30px 0 29px 28px;
 
-        @media(max-width:$tablet-width){
+        @media(max-width:$tablet-width) {
             border: none;
             padding: 0;
         }
@@ -93,10 +93,10 @@
         margin-bottom: 76px;
 
         @media(max-width:$desktop-width) {
-                width: 100%;
-                padding: 0;
-                margin-bottom: 47px;
-            }
+            width: 100%;
+            padding: 0;
+            margin-bottom: 47px;
+        }
 
         @media(max-width:$tablet-width) {
             font-size: 24px;
@@ -105,29 +105,54 @@
             margin-bottom: 38px;
         }
 
+        // &::before {
+        //     position: absolute;
+        //     content: "";
+        //     width: 1440px;
+        //     height: 2px;
+        //     background-color: #68B738;
+        //     top: 23px;
+        //     left: 0px;
+        //     z-index: 0;
 
-        &::before {
-            position: absolute;
-            content: "";
-            width: 1440px;
-            height: 2px;
-            background-color: #68B738;
-            top: 23px;
-            left: -110px;
-            z-index: 0;
+        //     @media(max-width:$desktop-width) {
+        //         width: 100%;
+        //         left: 260px;
+        //         z-index: 1;
+        //     }
 
-            @media(max-width:$desktop-width) {
-                width: 60%;
-                left: 260px;
-                z-index: 1;
-            }
+        //     @media(max-width:$tablet-width) {
+        //         width: 100%;
+        //         left: 160px;
+        //         top: 19px;
+        //     }
+        // }
 
-            @media(max-width:$tablet-width) {
-                width: 100%;
-                left: 160px;
-                top: 19px;
-            }
-        }
+        // &::after {
+        //     display: block;
+        //     margin-left: 230px;
+        //     margin-top: -10px;
+        //     margin-right: -200px;
+        //     content: "";
+        //     width: 100%;
+        //     height: 2px;
+        //     background-color: #68B738;
+        //     top: 23px;
+        //     left: 230px;
+        //     z-index: 0;
+
+        //     @media(max-width:$desktop-width) {
+        //         width: 100%;
+        //         left: 260px;
+        //         z-index: 1;
+        //     }
+
+        //     @media(max-width:$tablet-width) {
+        //         width: 100%;
+        //         left: 160px;
+        //         top: 19px;
+        //     }
+        // }
     }
 
     &__textarea {
@@ -142,7 +167,7 @@
         margin-bottom: 147px;
         border-color: #E7E7E7;
 
-        @media(max-width:$desktop-width){
+        @media(max-width:$desktop-width) {
             margin-bottom: 115px;
         }
 
