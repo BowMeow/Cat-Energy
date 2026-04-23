@@ -3,11 +3,10 @@
 .hero {
     &__wrapper {
         padding: 114px 110px 185px 110px;
-        display: grid;
-        grid-template-columns: 1fr;
+        gap:0;
         position: relative;
-        min-height: 500px;
         margin-bottom: 82px;
+        min-height: 500px;
 
         @media(max-width:$desktop-width) {
             padding: 50px 30px 50px 30px;
@@ -20,6 +19,7 @@
 
         @media(max-width:$tablet-width) {
             padding: 27px 20px 0;
+            gap:0;
             display: flex;
             flex-direction: column;
             margin-bottom: 20px;
@@ -178,7 +178,7 @@
     &__picture {
         position: absolute;
         right: 600px;
-        transform: translate(50%, 15%);
+        transform: translate(50%, -65%);
         z-index: 2;
         
         @media(max-width:$desktop-width) {
@@ -192,8 +192,8 @@
             width: 280px;
             height: 270px;
             order: 1;
-            right: calc(40% + 0px);
-            top: -30px;
+            right: 0;
+            transform: none;
         }
 
     }
