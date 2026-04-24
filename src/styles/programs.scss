@@ -18,6 +18,7 @@
         @media(max-width:$tablet-width) {
             padding-left: 20px;
             padding-right: 20px;
+            padding-bottom: 40px;
             gap: 20px;
             justify-content: center;
             margin-bottom: 0;
@@ -102,7 +103,6 @@
                 transform: scale(0.5);
                 left: -115px;
                 top: -35px;
-
             }
         }
     }
