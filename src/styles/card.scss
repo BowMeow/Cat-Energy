@@ -1,6 +1,22 @@
 @import "variables.scss";
 
 .card {
+
+    &__image{
+        @media(max-width:$desktop-width){
+            position: relative;
+            width:168px;
+            left: 38px;
+        }
+        @media(max-width:$tablet-width){
+            transform: scale(0.7);
+            grid-row: span 2;
+            place-self: center;
+            top: -15px;
+            left: 10px
+      }
+
+    }
     &__title {
         font-family: 'Oswald', sans-serif;
         font-weight: 400;
@@ -9,22 +25,64 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 22px;
-        margin-top: 162px;
+        margin-top: 46px;
 
         @media(max-width:$tablet-width) {
             font-size: 16px;
             margin-bottom: 18px;
+            margin-right: 60px;
             text-align: left;
             margin-top: 0;
-            margin-left: 50%;
         }
 
         &--more {
+            position: relative;
             margin-bottom: 23px;
             margin-top: 160px;
 
             @media(max-width:$tablet-width) {
-                margin: 90px auto 8px;
+                margin: 53px auto 8px;
+            }
+            &::before {
+                position: absolute;
+                content: " ";
+                width: 60px;
+                height: 2px;
+                background-color: #D3D3D3;
+                left: 55px;
+                top: -70px;
+        
+                @media(max-width:$desktop-width) {
+                    left: 90px;
+                    top:-70px;
+                }
+        
+                @media(max-width:$tablet-width) {
+                    width: 30px;
+                    top: -30px;
+                    left: 90px;
+                }
+            }
+        
+            &::after {
+                position: absolute;
+                content: " ";
+                width: 2px;
+                height: 60px;
+                background-color: #D3D3D3;
+                left: 85px;
+                top:-100px;
+        
+                @media(max-width:$desktop-width) {
+                    left: 120px;
+                    top:-100px;
+                }
+        
+                @media(max-width:$tablet-width) {
+                    height: 30px;
+                    top: -45px;
+                    left: 105px;
+                }
             }
         }
     }
@@ -35,8 +93,8 @@
         list-style: none;
 
         @media(max-width:$tablet-width) {
-            margin-left: 50%;
             color: #444444;
+            max-width: 250px;
         }
     }
 
@@ -96,45 +154,12 @@
         @media(max-width:$tablet-width) {
             border: none;
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        &::before {
-            position: absolute;
-            content: " ";
-            width: 60px;
-            height: 2px;
-            background-color: #D3D3D3;
-            top: 80px;
-            left: 92px;
-
-            @media(max-width:$desktop-width) {
-                left: 132px;
-            }
-
-            @media(max-width:$tablet-width) {
-                width: 30px;
-                top: 65px;
-                left: 147px;
-            }
-        }
-
-        &::after {
-            position: absolute;
-            content: " ";
-            width: 2px;
-            height: 60px;
-            background-color: #D3D3D3;
-            top: 50px;
-            left: 122px;
-
-            @media(max-width:$desktop-width) {
-                left: 162px;
-            }
-
-            @media(max-width:$tablet-width) {
-                height: 30px;
-            }
-        }
 
     }
 
@@ -154,11 +179,13 @@
         }
     }
 
-    &__wrapper {
-        @media(max-width:$tablet-width) {
-            max-width: 320px;
-            margin: 0 auto;
-        }
+    // &__wrapper {
+    //     @media(max-width:$tablet-width) {
+    //         max-width: 320px;
+    //         margin: 0 auto;
+    //         display: grid;
+
+    //     }
         
-    }
+    // }
 }
