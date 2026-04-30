@@ -1,0 +1,18 @@
+@use "variables.scss" as *; 
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    
+    &__wrapper {
+        display: flex;
+        gap: 81px;
+        align-items: center;
+
+        @media(max-width:$tablet-width) {
+            padding: 0;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@use "variables.scss" as *; 
+
+.catalog {
+  &__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 70px;
+
+    @media(max-width:$desktop-width) {
+      padding: 50px 30px 50px 30px;
+    }
+
+    @media(max-width:$tablet-width) {
+      margin-bottom: 0;
+      padding: 0;
+      padding-top: 30px;
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 82px;
+
+    @media(max-width:$tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 50px;
+      margin-inline-start: 20px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 144px;
+    margin: 0;
+    padding: 0;
+    @media(max-width:$desktop-width) {
+      column-gap: 60px;
+      justify-content: center;
+    }
+
+    @media(max-width:$tablet-width) {
+      gap: 20px;
+      margin: 0 auto;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #EBEBEB;
+      } 
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #EBEBEB;
+      } 
+    }
+  }
+
+  &__item {
+    position: relative;
+    background: linear-gradient(
+                #FFFFFF 87px,
+                #F2F2F2 87px
+            );
+    max-width: 245px;
+    padding: 0 40px 40px 35px;
+    box-sizing: border-box;
+
+    @media(max-width:$desktop-width) {
+      max-width: 325px;
+    }
+
+    @media(max-width:$tablet-width) {
+      background:none;
+      background-color: transparent;
+      min-width: 100%;
+      padding: 12px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row: 1fr 1fr 1fr;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+        width: 100%;
+        height: 2px;
+        background-color: #EBEBEB;
+      }
+    }
+    &:last-child{
+        background-color: none;
+        background: none;
+        height: 431px;
+        align-self: flex-end;
+
+        @media(max-width:$tablet-width){
+            height: 230px;
+            align-self: auto;
+        }
+      }
+  }
+
+  &__button {
+    width: 168px;
+    min-height: 40px;
+    align-self: center;
+    justify-self: center;
+
+    @media(max-width:$desktop-width) {
+      min-width: 248px;
+    }
+
+    @media(max-width:$tablet-width) {
+      display: block;
+      width: 90%;
+      grid-column: span 2;
+    }
+  }
+}

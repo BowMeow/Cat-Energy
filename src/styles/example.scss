@@ -1,0 +1,192 @@
+@use "variables.scss" as *; 
+
+.example {
+    &__wrapper {
+        position: relative;
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-bottom: 65px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-columns: 440px 1fr;
+        background: linear-gradient(
+                #FFFFFF 179px,
+                #EAEAEA 179px
+            );
+
+        @media(max-width:$desktop-width) {
+            padding: 0 30px 56px;
+            display: block;
+            background: linear-gradient(
+                #FFFFFF 540px,
+                #EAEAEA 540px
+            );          
+        }
+
+        @media(max-width:$tablet-width) {
+            padding: 25px 20px 86px;
+            display: block;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+            background: none;
+            background-color: #EAEAEA;
+        }
+    }
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 43px;
+        margin-bottom: 146px;
+
+        @media(max-width:$desktop-width) {
+            margin-bottom: 63px;
+        }
+
+        @media(max-width:$tablet-width) {
+            margin-top: 0;
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #444444;
+        margin-bottom: 69px;
+
+        @media(max-width:$desktop-width) {
+            margin-bottom: 54px;
+        }
+
+        @media(max-width:$tablet-width) {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__stat {
+        display: flex;
+        gap: 42px;
+        margin-bottom: 55px;
+
+        @media(max-width:$desktop-width) {
+            margin-bottom: 0;
+        }
+
+        @media(max-width:$tablet-width) {
+            margin-bottom: 20px;
+            align-self: center;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        width: 162px;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    &__point {
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 8px;
+        white-space: nowrap;
+        color: #444444;
+        background-color: #EAEAEA;
+
+        @media(max-width:$desktop-width) {
+            background-color: #FFFFFF;
+        }
+
+        @media(max-width:$tablet-width) {
+            font-size: 12px;
+            line-height: 12px;
+            white-space: normal;
+            background-color: #EAEAEA;
+        }
+    }
+
+    &__value {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        margin: 0;
+        display: block;
+
+        @media(max-width:$tablet-width) {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__results {
+        @media(max-width:$desktop-width) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+
+        @media(max-width:$tablet-width) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__expense {
+        display: flex;
+        gap: 63px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media(max-width:$desktop-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            text-align: right;
+            gap: 10px;
+        }
+
+        @media(max-width:$tablet-width) {
+            flex-direction: row;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            gap: 3px;
+            justify-content: center;
+        }
+    }
+
+    &__cost {
+        margin: 0;
+    }
+}
