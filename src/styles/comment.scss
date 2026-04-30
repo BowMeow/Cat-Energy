@@ -1,4 +1,5 @@
-@import "variables.scss";
+@use "variables.scss" as *; 
+
 .comment {
     display: flex;
     flex-direction: column;

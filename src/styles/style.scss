@@ -14,7 +14,7 @@
 @use "item.scss";
 @use "program-filter.scss";
 @use "variables.scss";
-@import "variables";
+@use "variables.scss" as *; 
 
 body {
 
