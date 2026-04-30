@@ -27,7 +27,6 @@
             justify-content: center;
         }
 
-
         &::after {
             content: "";
             position: absolute;
@@ -40,7 +39,6 @@
             background-position: center;
             background-size: cover;
             z-index: 0;
-
 
             @media(max-width:$desktop-width) {
                 display: none;
@@ -59,8 +57,6 @@
                 background-size: cover;
                 z-index: -2;
             }
-
-
         }
 
         &::before {
@@ -73,11 +69,9 @@
             background-color: rgba(104, 183, 56, 0.85);
             z-index: 1;
 
-
             @media(max-width:$desktop-width) {
                 display: none;
             }
-
 
             @media(max-width:$tablet-width) {
                 display: block;
@@ -89,7 +83,6 @@
                 background-color: rgba(104, 183, 56, 0.85);
                 z-index: -1;
             }
-
         }
     }
 
@@ -117,7 +110,6 @@
             color: #FFFFFF;
             order: -1;
         }
-
     }
 
     &__text {
@@ -144,7 +136,6 @@
             color: #FFFFFF;
             order: -1;
         }
-
     }
 
     &__button {
@@ -168,7 +159,6 @@
             width: 100%;
             padding: 10px 0;
         }
-
     }
 
     &__image {
@@ -195,6 +185,5 @@
             right: 0;
             transform: none;
         }
-
     }
 }

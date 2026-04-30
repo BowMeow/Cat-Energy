@@ -17,14 +17,12 @@
 @use "variables.scss" as *; 
 
 body {
-
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 1440px;
      @media(max-width:$tablet-width) {
             background-color: #E5E5E5;
         }
-
 }
 
 .visually-hidden {

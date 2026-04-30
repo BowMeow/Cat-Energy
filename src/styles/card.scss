@@ -14,8 +14,7 @@
             place-self: center;
             top: -15px;
             left: 10px
-      }
-
+        }
     }
     &__title {
         font-family: 'Oswald', sans-serif;
@@ -132,7 +131,6 @@
             @media(max-width:$tablet-width) {
                 display: none;
             }
-
         }
 
         &:last-child {
@@ -159,8 +157,6 @@
             flex-direction: column;
             justify-content: center;
         }
-
-
     }
 
     &__text {
@@ -178,14 +174,4 @@
             margin-bottom: 20px;
         }
     }
-
-    // &__wrapper {
-    //     @media(max-width:$tablet-width) {
-    //         max-width: 320px;
-    //         margin: 0 auto;
-    //         display: grid;
-
-    //     }
-        
-    // }
 }

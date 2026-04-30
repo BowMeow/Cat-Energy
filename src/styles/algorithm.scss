@@ -1,6 +1,8 @@
 @use "variables.scss" as *; 
 
 .algorithm {
+    counter-reset: number;
+
     &__wrapper {
         padding-left: 110px;
         padding-right: 110px;
@@ -51,8 +53,6 @@
         }
     }
 
-    counter-reset: number;
-
     &__item {
         max-width: 245px;
         min-height: 280px;
@@ -65,7 +65,6 @@
             min-width: 280px;
             padding-top: 0;
             min-height: 60px;
-
         }
 
         &--healthy {

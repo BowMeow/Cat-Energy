@@ -106,7 +106,6 @@
             border-radius: 6px;
         }
 
-
         &::before {
             position: absolute;
             content: " ";
@@ -120,10 +119,6 @@
             @media(max-width:$tablet-width) {
                 display: none;
             }
-
         }
     }
-
-
-
 }
