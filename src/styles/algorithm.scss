@@ -1,0 +1,211 @@
+@use "variables.scss" as *; 
+
+.algorithm {
+    counter-reset: number;
+
+    &__wrapper {
+        padding-left: 110px;
+        padding-right: 110px;
+        margin-bottom: 26px;
+
+        @media(max-width:$desktop-width) {
+            padding: 0 30px ;
+        }
+
+        @media(max-width:$tablet-width) {
+            padding:35px 20px 22px;
+            margin-bottom: 0;
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0;
+        margin-bottom: 32px;
+
+        @media(max-width:$tablet-width) {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media(max-width:$desktop-width) {
+            justify-content: flex-start;
+            column-gap: 150px;
+        }
+
+        @media(max-width:$tablet-width) {
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        max-width: 245px;
+        min-height: 280px;
+        position: relative;
+        padding-top: 151px;
+        box-sizing: border-box;
+        counter-increment: number;
+
+        @media(max-width:$tablet-width) {
+            min-width: 280px;
+            padding-top: 0;
+            min-height: 60px;
+        }
+
+        &--healthy {
+
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-1.svg);
+                top: 40px;
+
+                @media(max-width:$tablet-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: 15px;
+                z-index: -1;
+
+                @media(max-width:$tablet-width) {
+                    display: none;
+                }
+            }
+        }
+
+        &--easy {
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-2.svg);
+                top: 40px;
+
+                @media(max-width:$tablet-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: -5px;
+                z-index: -1;
+
+                @media(max-width:$tablet-width) {
+                    display: none;
+                }
+            }
+        }
+
+        &--replace {
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-3.svg);
+                top: 40px;
+
+                @media(max-width:$tablet-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: 10px;
+                z-index: -1;
+
+                @media(max-width:$tablet-width) {
+                    display: none;
+                }
+            }
+        }
+
+        &--enjoy {
+            &::before {
+                position: absolute;
+                content: url(/images/algorithm-4.svg);
+                top: 40px;
+
+                @media(max-width:$tablet-width) {
+                    transform: scale(0.75);
+                    top: -12px;
+                    left: -10px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: counter(number);
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+                font-size: 280px;
+                line-height: 280px;
+                color: #F2F2F2;
+                top: 0;
+                right: -5px;
+                z-index: -1;
+
+                @media(max-width:$tablet-width) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    &__text {
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #444444;
+        margin: 0;
+
+        @media(max-width:$tablet-width) {
+            font-size: 14px;
+            line-height: 18px;
+            margin-left: 80px;
+        }
+    }
+}

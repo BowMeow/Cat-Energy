@@ -1,0 +1,154 @@
+@use "variables.scss" as *; 
+
+.programs {
+    &__wrapper {
+        padding-left: 110px;
+        padding-right: 110px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        flex-wrap: wrap;
+
+        @media(max-width:$desktop-width) {
+            padding: 0 30px;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        @media(max-width:$tablet-width) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+    }
+
+    &__slim,
+    &__pro {
+        background-color: #F2F2F2;
+        max-width: 570px;
+        padding: 77px 52px 55px;
+        box-sizing: border-box;
+
+        @media(max-width:$desktop-width) {
+            padding: 77px 53px 53px;
+            max-width: 708px;
+            width: 100%;
+        }
+
+        @media(max-width:$tablet-width) {
+            max-width: 320px;
+            padding: 30px 33px 18px 20px;
+        }
+    }
+
+    &__title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        text-transform: uppercase;
+        margin-left: 214px;
+        position: relative;
+        margin-bottom: 73px;
+
+        @media(max-width:$desktop-width) {
+            margin-top: 0;
+            margin-bottom: 24px;
+            text-align: left;
+            margin-left: 0;
+        }
+
+        @media(max-width:$tablet-width) {
+            font-size: 24px;
+            margin-bottom: 29px;
+            margin-left: 70px;
+            text-align: left;
+        }
+
+        &--icon-loss::before {
+            content: url(/images/cat-slim.svg);
+            position: absolute;
+            left: -200px;
+            top: -100%;
+
+            @media(max-width:$desktop-width) {
+                transform: scale(2);
+                left: 450px;
+                top: 50px;
+            }
+
+            @media(max-width:$tablet-width) {
+                transform: scale(0.5);
+                left: -95px;
+                top: -35px;
+            }
+        }
+
+        &--icon-increase::before {
+            content: url(/images/cat-pro.svg);
+            position: absolute;
+            left: -219px;
+            top: -100%;
+
+            @media(max-width:$desktop-width) {
+                transform: scale(2);
+                left: 420px;
+                top: 50px;
+            }
+
+            @media(max-width:$tablet-width) {
+                transform: scale(0.5);
+                left: -115px;
+                top: -35px;
+            }
+        }
+    }
+
+    &__text {
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 23px;
+
+        @media(max-width:$desktop-width) {
+            max-width: 340px;
+        }
+
+        @media(max-width:$tablet-width) {
+            font-size: 14px;
+        }
+    }
+
+    &__button {
+        position: relative;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+
+        &::after {
+            position: absolute;
+            content: url(/images/programs-arrow.svg);
+            transform: translate(100%, -5%);
+
+            @media(max-width:$desktop-width) {
+                transform: translate(70%);
+            }
+
+            @media(max-width:$tablet-width) {
+                transform: translate(50%);
+            }
+        }
+
+        @media(max-width:$tablet-width) {
+            font-size: 16px;
+        }
+    }
+}

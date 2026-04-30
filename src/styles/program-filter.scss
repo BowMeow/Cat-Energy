@@ -1,0 +1,83 @@
+@use "variables.scss" as *; ;
+
+.program-filter {
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__checkbox {
+        position: relative;
+
+        &[type="radio"] {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        &--checked::before {
+            position: absolute;
+            content: " ";
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            top: -15px;
+            left: -48px;
+            background-color: #68B738;
+
+            @media(max-width:$tablet-width) {
+                width: 13px;
+                height: 13px;
+                top: -17px;
+                left: -35px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: " ";
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            top: -27px;
+            left: -60px;
+            border: 1px solid #CDCDCD;
+
+            @media(max-width:$tablet-width) {
+                width: 30px;
+                height: 30px;
+                left: -45px;
+            }
+        }
+    }
+
+    &__item {
+        margin-left: 60px;
+        margin-bottom: 20px;
+
+        @media(max-width:$tablet-width) {
+            margin-left: 45px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        @media(max-width:$tablet-width) {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    &__label {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,19 @@
+.button {
+    border: none;
+    background-color: #68B738;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+
+    &--show-more {
+        background-color: #F2F2F2;
+        color: #444444
+    }
+}
